@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 1ª evaluación LMSXI</title>
+    <style>
+        fieldset {
+
+            margin-bottom: 3%;
+            width: 80%;
+        }
+        .button{
+            border-radius: 43%;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Your details</legend>
+        <form>
+            <ol>
+                <li> <label for="name">Name: </label><br></li>
+                <input type="text" name="name"><br>
+                <li> <label for="email">Email: </label><br></li>
+                <input type="text" name="email"><br>
+                <li> <label for="phone">Phone: </label><br></li>
+                <input type="text" name="phone"><br>
+            </ol>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Delivery Address</legend>
+        <form>
+            <ol>
+                <li> <label for="address">Address: </label><br></li>
+                <textarea name="comentarios" id="comentarios" rows="4" cols="30" maxlength="200"></textarea><br>
+                <li> <label for="postcode">Post code: </label><br></li>
+                <input type="text" name="postcode"><br>
+                <li> <label for="country">Country: </label><br></li>
+                <input type="text" name="phone"><br>
+            </ol>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Card details</legend>
+        <form>
+            <ol>
+                <fieldset>
+                    <li style="margin-left: 10px;">
+                        <legend for="address">Card type: </legend><br>
+                    </li>
+                    <ol>
+                        <li> <input type="radio" name="visa" value="visa">
+                            <label for="visa">Visa</label><br>
+                        </li>
+                        <li><input type="radio" name="amex" value="amex">
+                            <label for="amex">AmEx</label><br>
+                        </li>
+                        <li> <input type="radio" name="mastercard" value="mastercard">
+                            <label for="mastercard">Mastercard</label><br>
+                        </li>
+                    </ol>
+                </fieldset>
+                <li> <label for="cadrn">Card number: </label><br></li>
+                <input list="cadrn" name="cadrn">
+                <datalist id="cadrn">
+                    <option value="000000">
+                    <option value="111111">
+                    <option value="222222">
+                </datalist>
+                <li> <label for="country">Security code: </label><br></li>
+                <input list="code" name="code">
+                <datalist id="code">
+                    <option value="1234">
+                    <option value="1111">
+                    <option value="2222">
+                </datalist>
+                <li> <label for="namecard">Name on card: </label><br></li>
+                <input type="text" name="namecard" value="Exact name as on the card."><br>
+            </ol>
+            <input type="submit" class="button" value="Buy it!">
+        </form>
+    </fieldset>
+</body>
+
+</html>
